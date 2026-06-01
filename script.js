@@ -10,11 +10,11 @@
      ---------------------------------------------------------------------- */
   var CASES = [
     { n: "Caso 1", desc: "Carillas en porcelana",        a: "antes-1.jpg",  d: "despues-1.jpg" },
-    { n: "Caso 2", desc: "Diseño de Sonrisa integral",   a: "antes-2.jpg",  d: "despues-2.jpg" },
-    { n: "Caso 3", desc: "Rehabilitación estética",      a: "antes-3.jpg",  d: "despues-3.jpg" },
-    { n: "Caso 4", desc: "Alineación y blanqueamiento",  a: "antes-4.jpg",  d: "despues-4.jpg" },
-    { n: "Caso 5", desc: "Carillas + diseño de encía",   a: "antes-5.jpg",  d: "despues-5.jpg" },
-    { n: "Caso 6", desc: "Sonrisa armónica natural",     a: "antes-6.jpg",  d: "despues-6.jpg" }
+    { n: "Caso 2", desc: "Rehabilitación estética",       a: "antes-2.jpg",  d: "despues-2.jpg" },
+    { n: "Caso 3", desc: "Carillas + blanqueamiento",     a: "antes-3.jpg",  d: "despues-3.jpg" },
+    { n: "Caso 4", desc: "Diseño de Sonrisa integral",    a: "antes-4.jpg",  d: "despues-4.jpg" },
+    { n: "Caso 5", desc: "Recuperación funcional",        a: "antes-5.jpg",  d: "despues-5.jpg" },
+    { n: "Caso 6", desc: "Sonrisa armónica natural",      a: "antes-6.jpg",  d: "despues-6.jpg" }
   ];
 
   var grid = document.getElementById("casesGrid");
@@ -26,8 +26,8 @@
         '<div class="case-imgs">' +
           '<span class="case-tag antes">Antes</span>' +
           '<span class="case-tag despues">Después</span>' +
-          '<figure class="ph"><span class="ph-label">images/' + c.a + '</span></figure>' +
-          '<figure class="ph"><span class="ph-label">images/' + c.d + '</span></figure>' +
+          '<figure class="ph"><img src="images/' + c.a + '" alt="Antes — ' + c.desc + '" loading="lazy"></figure>' +
+          '<figure class="ph"><img src="images/' + c.d + '" alt="Después — ' + c.desc + '" loading="lazy"></figure>' +
         '</div>' +
         '<div class="case-foot"><h3>' + c.n + '</h3><span>' + c.desc + '</span></div>';
       grid.appendChild(card);

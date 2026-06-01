@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Mulish:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=2">
+<link rel="stylesheet" href="styles.css?v=4">
 </head>
 <body>
 
@@ -66,17 +66,13 @@
       </div>
 
       <div class="hero-media">
-        <!-- IMAGEN: images/dra-manuela-hero.jpg  (Dra. Manuela en su consultorio, retrato vertical) -->
-        <figure class="ph ph-hero" aria-label="Retrato de la Dra. Manuela">
-          <span class="ph-label">images/dra-manuela-hero.jpg</span>
+        <figure class="ph ph-hero" aria-label="Retrato de la Dra. Manuela Murillo en su consultorio">
+          <img src="images/dra-manuela-hero.jpg" alt="Dra. Manuela Murillo en su consultorio en Itagüí" loading="eager">
         </figure>
         <div class="media-card">
           <p class="media-card-name">Dra. Manuela</p>
           <p class="media-card-role">Odontóloga Estética</p>
         </div>
-        <button class="media-arrow" aria-label="Siguiente foto">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
-        </button>
       </div>
     </div>
 
@@ -148,7 +144,7 @@
         <!-- las tarjetas se inyectan desde script.js -->
       </div>
 
-      <p class="cases-note">* Imágenes ilustrativas de referencia. Los resultados varían según cada paciente y se personalizan en la valoración inicial.</p>
+      <p class="cases-note">* Resultados reales de pacientes. Cada caso es único; los resultados varían y se personalizan en la valoración inicial.</p>
 
       <div class="center">
         <a href="https://wa.me/573012615155" class="btn btn-gold" target="_blank" rel="noopener">
@@ -232,13 +228,9 @@
   <section class="section section-beige" id="sobre-mi">
     <div class="wrap about-grid">
       <div class="about-media">
-        <!-- IMAGEN: images/dra-manuela-sobre-mi.jpg  (Dra. Manuela retrato, consultorio) -->
-        <figure class="ph ph-about" aria-label="Retrato de la Dra. Manuela">
-          <span class="ph-label">images/dra-manuela-sobre-mi.jpg</span>
+        <figure class="ph ph-about" aria-label="Sonrisa natural diseñada por la Dra. Manuela">
+          <img src="images/dra-manuela-sobre-mi.jpg" alt="Sonrisa natural y armónica, resultado de un Diseño de Sonrisa" loading="lazy">
         </figure>
-        <button class="media-arrow about-arrow" aria-label="Siguiente foto">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
-        </button>
         <div class="about-badge">
           <p class="about-badge-num">+200</p>
           <p class="about-badge-label">Sonrisas diseñadas con amor</p>
@@ -375,5 +367,13 @@
 </footer>
 
 <script src="script.js"></script>
+
+<template id="__bundler_thumbnail" data-bg-color="#fdfaf4">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#fdfaf4"/>
+    <path d="M600 300c25 250 75 300 320 320-245 20-295 70-320 320-25-250-75-300-320-320 245-20 295-70 320-320Z" fill="#c99d4e"/>
+    <text x="600" y="700" font-family="Georgia, serif" font-size="60" fill="#241e1a" text-anchor="middle" font-style="italic">Dra. Manuela</text>
+  </svg>
+</template>
 </body>
 </html>
