@@ -9,12 +9,12 @@
      1. Galería de casos (Antes / Después) — generada dinámicamente
      ---------------------------------------------------------------------- */
   var CASES = [
-    { n: "Caso 1", desc: "Carillas en porcelana",        a: "antes-1.jpg",  d: "despues-1.jpg" },
-    { n: "Caso 2", desc: "Rehabilitación estética",       a: "antes-2.jpg",  d: "despues-2.jpg" },
-    { n: "Caso 3", desc: "Carillas + blanqueamiento",     a: "antes-3.jpg",  d: "despues-3.jpg" },
-    { n: "Caso 4", desc: "Diseño de Sonrisa integral",    a: "antes-4.jpg",  d: "despues-4.jpg" },
-    { n: "Caso 5", desc: "Recuperación funcional",        a: "antes-5.jpg",  d: "despues-5.jpg" },
-    { n: "Caso 6", desc: "Sonrisa armónica natural",      a: "antes-6.jpg",  d: "despues-6.jpg" }
+    { n: "Caso 1", desc: "Diseño de Sonrisa · vista frontal", img: "caso-1.jpg" },
+    { n: "Caso 2", desc: "Carillas en porcelana",          img: "caso-2.jpg" },
+    { n: "Caso 3", desc: "Rehabilitación estética",         img: "caso-3.jpg" },
+    { n: "Caso 4", desc: "Diseño armónico · vistas laterales", img: "caso-4.jpg" },
+    { n: "Caso 5", desc: "Sonrisa natural y funcional",     img: "caso-5.jpg" },
+    { n: "Caso 6", desc: "Transformación integral",         img: "caso-6.jpg" }
   ];
 
   var grid = document.getElementById("casesGrid");
@@ -23,11 +23,9 @@
       var card = document.createElement("article");
       card.className = "case-card reveal";
       card.innerHTML =
-        '<div class="case-imgs">' +
-          '<span class="case-tag antes">Antes</span>' +
-          '<span class="case-tag despues">Después</span>' +
-          '<figure class="ph"><img src="images/' + c.a + '" alt="Antes — ' + c.desc + '" loading="lazy"></figure>' +
-          '<figure class="ph"><img src="images/' + c.d + '" alt="Después — ' + c.desc + '" loading="lazy"></figure>' +
+        '<div class="case-img">' +
+          '<span class="case-tag duo">Antes / Después</span>' +
+          '<figure class="ph"><img src="images/' + c.img + '" alt="Antes y después — ' + c.desc + '" loading="lazy"></figure>' +
         '</div>' +
         '<div class="case-foot"><h3>' + c.n + '</h3><span>' + c.desc + '</span></div>';
       grid.appendChild(card);
