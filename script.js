@@ -11,10 +11,10 @@
   var CASES = [
     { n: "Caso 1", desc: "Diseño de Sonrisa · vista frontal", img: "caso-1.jpg" },
     { n: "Caso 2", desc: "Carillas en porcelana",          img: "caso-2.jpg" },
-    { n: "Caso 3", desc: "Rehabilitación estética",         img: "caso-3.jpg" },
+    { n: "Caso 3", desc: "Rehabilitación estética",         img: "caso3.jpeg" },
     { n: "Caso 4", desc: "Diseño armónico · vistas laterales", img: "caso-4.jpg" },
-    { n: "Caso 5", desc: "Sonrisa natural y funcional",     img: "caso-5.jpg" },
-    { n: "Caso 6", desc: "Transformación integral",         img: "caso-6.jpg" }
+    { n: "Caso 5", desc: "Sonrisa natural y funcional",     img: "caso5.JPEG" },
+    { n: "Caso 6", desc: "Transformación integral",         img: "caso5.JPEG" }
   ];
 
   var grid = document.getElementById("casesGrid");
