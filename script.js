@@ -14,7 +14,7 @@
     { n: "Caso 3", desc: "Rehabilitación estética",         img: "caso3.jpeg" },
     { n: "Caso 4", desc: "Diseño armónico · vistas laterales", img: "caso-4.jpg" },
     { n: "Caso 5", desc: "Sonrisa natural y funcional",     img: "caso5.JPEG" },
-    { n: "Caso 6", desc: "Transformación integral",         img: "caso5.JPEG" }
+    { n: "Caso 6", desc: "Transformación integral",         img: "caso6.JPEG" }
   ];
 
   var grid = document.getElementById("casesGrid");
